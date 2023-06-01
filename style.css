@@ -134,41 +134,40 @@ main p {
 
 .gridSobreMi {
   display: grid;
-  grid-template-columns: 45% 45%;
-  margin-left: 0%;
-  margin-right: 0%;
-  padding: 0%;
-  justify-content: center;
-  column-gap: 10%;
-}
-
-#SobreMi p {
-  font-weight: lighter;
-  color: var(--main-fontColor);
-}
-.fotoYDatos {
-  display: grid;
   grid-template-columns: 50% 50%;
   margin-left: 0%;
   margin-right: 0%;
   padding: 0%;
   justify-content: center;
-  margin-bottom: 0%;
+}
+.itemSobreMi-1{
+}
+#SobreMi p {
+  font-weight: lighter;
+  color: var(--main-fontColor);
+}
+.fotoYDatos {
+    display: flex;
+
+  margin:auto;
+  padding: 0%;
+  justify-content: space-between;
+
 
 
 }
 .fotoDePerfil {
-  display: flex;
   padding: 0%;
-  margin: 6%;
+  margin: auto;
   margin-left: 10%;
 }
 .foto {
-  width: 100%;
-
+  width: 200px;
+  height: 200px ;
+  border-radius: 50% ;
+  object-fit: cover;
   margin: 0%;
   padding: 0%;
-  border-radius: 0.375rem;
 }
 
 .datos {
@@ -179,6 +178,8 @@ main p {
 .datos p{text-align:left}
 
 .itemSobreMi-2 {
+  display: inline-block;
+  border: #0078FF 1px solid;
   margin: auto;
   padding-right: 6%;
 }
@@ -316,16 +317,16 @@ main p {
   width: 80%;
   padding: 10px 15px;
   border-width: 2px;
-  border-style: inset;
   border-color: var(--main-bgColor);
+  border-radius: 10px;
   margin-bottom: 4%;
   margin-right: 13%;
   color: var(--main-color);
 }
 
 #FormularioContacto textarea {
-  border-width: px;
-  border-style: inset;
+  border-width: 2px;
+  border-radius: 10px;
   border-color: var(--main-bgColor);
   writing-mode: horizontal-tb !important;
   width: 80%;
